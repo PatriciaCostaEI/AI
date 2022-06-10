@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artificial Intelligence</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #0099e9, #021d3a);
+        }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        color: #1C1C1C;
+        
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #05b9f8;
+        padding: 15px;
+        font-size: 30px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      .video{
+        text-align: center;
+        padding: 15px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 18px;
+        margin: 20px 0 10px;
+        text-align: justify;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #0159a3;
+        color: #05b9f8;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+      
+
+      .learn-more {
+        color: #05b9f8;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        color: #05b9f8;;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Artificial Intelligence 🧠💻
+
+      </h1>
+      <h2>
+        What is it and what is its importance?
+
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/908/original/007.jpeg?1640946038"
+        alt="IA"
+      />
+      <p>
+        <strong>Artificial intelligence (AI)</strong> enables machines to learn from experiences, 
+        adjust to new data inputs and perform tasks like human beings. 
+        Most of the AI examples you hear about today from master chess computers to autonomous cars 
+        rely on <span style="color:#05b9f8">deep learning and natural language processing</span>. <em>With these technologies, 
+        computers can be trained to perform specific tasks when processing large amounts
+         of data and recognizing patterns in that data.</em>
+      </p>
+      <br>
+      <hr>
+      <br>
+      <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kWmX3pd1f10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+      <a
+        href="https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_artificial"
+        target="_blank"
+        class="learn-more"
+      >
+      <br>
+        Learn more on Wikipedia
+      </a>
+      <br>
+      <button class="aplly-button">
+        👉 Learn More
+      </button>
+      <br>
+      <p class="footer">
+        This page was built by
+        <a href="https://www.delac.io/" target="_blank">
+          Patrícia Costa 👧
+        </a>
+      </p>
+    </div>
+    <script>
+      function apply() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let newsLetter = prompt("Are you interested in learning more about artificial intelligence?");
+    if (newsLetter === "Yes") {
+        alert("Thank you, " +
+            name +
+            "! We'll be in touch by email! "
+            );
+    } else { 
+    alert("Thanks for your reply!")
+    }
+    }
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", apply);
+    </script>
+  </body>
+</html>
